@@ -1,0 +1,62 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "ed3a1968d59b5cb12e2d78f63da7ae02",
+    "content-hash": "2c09b7e3c3de3ad71f73ebe75ed73fc5",
+    "packages": [
+        {
+            "name": "MarcosSegovia/Coolframework",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MarcosSegovia/Coolframework.git",
+                "reference": "4494b58510f52f3d23eab04adf58a3c2a6d22f5d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MarcosSegovia/Coolframework/zipball/4494b58510f52f3d23eab04adf58a3c2a6d22f5d",
+                "reference": "4494b58510f52f3d23eab04adf58a3c2a6d22f5d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "type": "project",
+            "autoload": {
+                "psr-4": {
+                    "Coolframework\\": "src/Coolframework"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marcos Segovia",
+                    "email": "velozmarkdrea@gmail.com"
+                }
+            ],
+            "description": "The best framework for years like this",
+            "support": {
+                "source": "https://github.com/MarcosSegovia/Coolframework/tree/master",
+                "issues": "https://github.com/MarcosSegovia/Coolframework/issues"
+            },
+            "time": "2016-02-15 19:03:59"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "marcossegovia/coolframework": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=5.3.3"
+    },
+    "platform-dev": []
+}

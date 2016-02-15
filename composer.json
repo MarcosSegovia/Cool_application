@@ -1,0 +1,28 @@
+{
+  "name": "Cool_application",
+  "description": "This is my very first app to get Coolframework working",
+  "keywords": [],
+  "license": "MIT",
+  "type": "project",
+  "authors": [
+    {
+      "name": "Marcos Segovia",
+      "email": "velozmarkdrea@gmail.com"
+    }
+  ],
+  "repositories":
+  [
+    {
+      "type": "vcs",
+      "url": "https://github.com/MarcosSegovia/Coolframework"
+    }
+  ],
+  "require": {
+    "php": ">=5.3.3",
+    "MarcosSegovia/Coolframework": "dev-master"
+  },
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": { "CoolApplication\\": "src/" }
+  }
+}
