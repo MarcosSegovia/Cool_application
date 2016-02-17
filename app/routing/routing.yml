@@ -2,3 +2,6 @@ home :
   - CoolApplication\HomeController
 cool :
   - CoolApplication\CoolController
+cool-pam:
+ - CoolApplication\CoolController
+ - pam
