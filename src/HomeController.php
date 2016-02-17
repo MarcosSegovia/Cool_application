@@ -2,10 +2,12 @@
 
 namespace CoolApplication;
 
+use Coolframework\Component\Response\Response;
+
 class HomeController
 {
 	public function index()
 	{
-		echo 'First Controller !';
+		return new Response('First Controller !');
 	}
 }
