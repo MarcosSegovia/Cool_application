@@ -1,0 +1,6 @@
+home :
+  - CoolApplication\HomeController
+  - index
+cool :
+  - CoolApplication\CoolController
+  - pam
