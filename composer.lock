@@ -13,12 +13,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/MarcosSegovia/Coolframework.git",
-                "reference": "55d6deed0ca58a2eaae1adbae650d6d21df9b27f"
+                "reference": "2cae8d2f70e744ccacbc6eb9ba652006ae923a69"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/MarcosSegovia/Coolframework/zipball/55d6deed0ca58a2eaae1adbae650d6d21df9b27f",
-                "reference": "55d6deed0ca58a2eaae1adbae650d6d21df9b27f",
+                "url": "https://api.github.com/repos/MarcosSegovia/Coolframework/zipball/2cae8d2f70e744ccacbc6eb9ba652006ae923a69",
+                "reference": "2cae8d2f70e744ccacbc6eb9ba652006ae923a69",
                 "shasum": ""
             },
             "require": {
@@ -45,7 +45,7 @@
                 "source": "https://github.com/MarcosSegovia/Coolframework/tree/master",
                 "issues": "https://github.com/MarcosSegovia/Coolframework/issues"
             },
-            "time": "2016-02-15 20:10:27"
+            "time": "2016-02-18 10:53:04"
         },
         {
             "name": "symfony/yaml",
@@ -53,12 +53,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "a4d7a7a129c244c8fadb7a8dce4258623c0dbbf3"
+                "reference": "6abf61b4e0f8330ccf891c046273966272ff3f49"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/a4d7a7a129c244c8fadb7a8dce4258623c0dbbf3",
-                "reference": "a4d7a7a129c244c8fadb7a8dce4258623c0dbbf3",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/6abf61b4e0f8330ccf891c046273966272ff3f49",
+                "reference": "6abf61b4e0f8330ccf891c046273966272ff3f49",
                 "shasum": ""
             },
             "require": {
@@ -94,7 +94,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2016-02-12 16:14:34"
+            "time": "2016-02-18 10:31:35"
         }
     ],
     "packages-dev": [],
