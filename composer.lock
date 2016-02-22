@@ -13,12 +13,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/MarcosSegovia/Coolframework.git",
-                "reference": "74a476fc09d833ff5262ef316a6169df362a4e93"
+                "reference": "938c4a5dd2cfb1aa59d3514c74fc20e828f3b0d1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/MarcosSegovia/Coolframework/zipball/74a476fc09d833ff5262ef316a6169df362a4e93",
-                "reference": "74a476fc09d833ff5262ef316a6169df362a4e93",
+                "url": "https://api.github.com/repos/MarcosSegovia/Coolframework/zipball/938c4a5dd2cfb1aa59d3514c74fc20e828f3b0d1",
+                "reference": "938c4a5dd2cfb1aa59d3514c74fc20e828f3b0d1",
                 "shasum": ""
             },
             "require": {
@@ -47,7 +47,7 @@
                 "source": "https://github.com/MarcosSegovia/Coolframework/tree/master",
                 "issues": "https://github.com/MarcosSegovia/Coolframework/issues"
             },
-            "time": "2016-02-21 17:04:30"
+            "time": "2016-02-21 17:18:56"
         },
         {
             "name": "smarty/smarty",
@@ -110,12 +110,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "6abf61b4e0f8330ccf891c046273966272ff3f49"
+                "reference": "13797a2598154e4663f31360733434e56924e20a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/6abf61b4e0f8330ccf891c046273966272ff3f49",
-                "reference": "6abf61b4e0f8330ccf891c046273966272ff3f49",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/13797a2598154e4663f31360733434e56924e20a",
+                "reference": "13797a2598154e4663f31360733434e56924e20a",
                 "shasum": ""
             },
             "require": {
