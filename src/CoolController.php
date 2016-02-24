@@ -2,21 +2,23 @@
 
 namespace CoolApplication;
 
+use Coolframework\Component\Injector\CoolContainer;
 use Coolframework\Component\Response\Response;
-use Coolframework\Component\Templating\TwigTemplating;
 
 class CoolController
 {
+	private $container;
 	private $template_engine;
 
-	public function __construct()
+	public function __construct(CoolContainer $container)
 	{
-		$this->template_engine = new TwigTemplating();
+		$this->container       = $container;
+		$this->template_engine = $this->container->getService('smarty_templating');
 	}
 
 	public function index()
 	{
-		return new Response($this->template_engine->render('hello.twig'));
+		return new Response($this->template_engine->render('hello.tpl'));
 	}
 
 	public function pam()

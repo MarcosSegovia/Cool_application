@@ -1,0 +1,1 @@
+<h1>THIS IS SMARTY =D</h1>
