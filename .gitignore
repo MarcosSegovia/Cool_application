@@ -1,3 +1,4 @@
 vendor
 web/smarty/cache
 web/twig/cache
+web/smarty/templates_c
