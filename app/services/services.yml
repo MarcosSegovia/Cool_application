@@ -1,0 +1,37 @@
+bootstrap:
+    class: Coolframework\Component\Bootstrap\Bootstrap
+    arguments:
+      - "@routing"
+    public: true
+
+routing:
+    class: Coolframework\Component\Routing\Routing
+    public: false
+
+smarty_templating:
+    class: Coolframework\Component\Templating\SmartyTemplating
+    arguments:
+      - "@smarty"
+
+smarty:
+    class: Smarty
+    public: false
+
+twig_templating:
+    class: Coolframework\Component\Templating\TwigTemplating
+    arguments:
+      - "@twig_environment"
+    public: true
+
+twig_environment:
+    class: Twig_Environment
+    arguments:
+      - "@twig_loader"
+      - "['cache' => '/var/www/html/Cool_application/web/twig/cache', 'debug' => 'false']"
+    public: false
+
+twig_loader:
+    class: Twig_Loader_Filesystem
+    arguments:
+      - "/var/www/html/Cool_application/web/twig/templates"
+    public: false
