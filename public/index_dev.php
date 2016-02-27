@@ -11,7 +11,6 @@ $cool_container = new \Coolframework\Component\Injector\CoolContainer($parser, R
 
 $app = $cool_container->getService('bootstrap');
 $app->setContainer($cool_container);
-$app->configRouting($parser, __DIR__ . '/../app/routing/routing.yml');
 
 $request  = \Coolframework\Component\Request\Request::create();
 $response = $app->execute($request);
