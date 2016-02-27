@@ -1,0 +1,6 @@
+twig_environment:
+    class: Twig_Environment
+    arguments:
+      - "@twig_loader"
+      - "['cache' => '/var/www/html/Cool_application/web/twig/cache', 'debug' => 'true']"
+    public: false
