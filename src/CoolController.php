@@ -2,17 +2,17 @@
 
 namespace CoolApplication;
 
+use Coolframework\Component\Controller\CoolControllerBase;
 use Coolframework\Component\Injector\CoolContainer;
 use Coolframework\Component\Response\Response;
 
-class CoolController
+class CoolController extends CoolControllerBase
 {
-	private $container;
 	private $template_engine;
 
 	public function __construct(CoolContainer $container)
 	{
-		$this->container       = $container;
+		parent::__construct($container);
 		$this->template_engine = $this->container->getService('smarty_templating');
 	}
 

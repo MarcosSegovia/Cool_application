@@ -10,8 +10,9 @@ $parser         = new Parser();
 $cool_container = new \Coolframework\Component\Injector\CoolContainer($parser, ROOTPATH . '/app/services');
 
 $app = $cool_container->getService('bootstrap');
+$app->setContainer($cool_container);
 $app->configRouting($parser, __DIR__ . '/../app/routing/routing.yml');
 
 $request  = \Coolframework\Component\Request\Request::create();
-$response = $app->execute($cool_container, $request);
+$response = $app->execute($request);
 $response->send();
