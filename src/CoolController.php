@@ -18,11 +18,11 @@ class CoolController
 
 	public function index()
 	{
-		return new Response($this->template_engine->render('hello.tpl'));
+		return Response::create($this->template_engine->render('hello.tpl'), Response::HTTP_ACCEPTED, ['Content-Type: text/html']);
 	}
 
 	public function pam()
 	{
-		return new Response('Que pim que pam');
+		return Response::create('Que pim que pam', Response::HTTP_ACCEPTED, ['Content-Type: text/html']);
 	}
 }

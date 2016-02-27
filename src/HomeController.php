@@ -18,6 +18,6 @@ class HomeController
 
 	public function index()
 	{
-		return new Response($this->template_engine->render('hello.twig'));
+		return Response::create($this->template_engine->render('hello.twig'), Response::HTTP_ACCEPTED, ['Content-Type: text/html']);
 	}
 }

@@ -14,4 +14,4 @@ $app->configRouting($parser, __DIR__ . '/../app/routing/routing.yml');
 
 $request  = \Coolframework\Component\Request\Request::create();
 $response = $app->execute($cool_container, $request);
-$response->message();
+$response->send();
