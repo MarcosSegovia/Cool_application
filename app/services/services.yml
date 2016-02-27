@@ -6,7 +6,14 @@ bootstrap:
 
 routing:
     class: Coolframework\Component\Routing\Routing
+    arguments:
+      - "@yml_parser"
+      - "/var/www/html/Cool_application/app/routing/routing.yml"
     public: false
+
+yml_parser:
+    class: Symfony\Component\Yaml\Parser
+    public: true
 
 smarty_templating:
     class: Coolframework\Component\Templating\SmartyTemplating
