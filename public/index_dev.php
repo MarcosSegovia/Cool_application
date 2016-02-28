@@ -7,7 +7,7 @@ require_once __DIR__ . '/../vendor/autoload.php';
 define('ROOTPATH', realpath(__DIR__ . '/../'));
 
 $parser         = new Parser();
-$cool_container = new \Coolframework\Component\Injector\CoolContainer($parser, ROOTPATH . '/app/services');
+$cool_container = new \Coolframework\Component\Injector\CoolContainer($parser, ROOTPATH . '/app/services', 'DEV');
 
 $app = $cool_container->getService('bootstrap');
 $app->setContainer($cool_container);
