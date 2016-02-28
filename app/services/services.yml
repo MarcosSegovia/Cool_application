@@ -37,6 +37,9 @@ twig_environment:
       - "@twig_loader"
       - "['cache' => '/var/www/html/Cool_application/web/twig/cache', 'debug' => 'false']"
     public: false
+    tags:
+      - example
+      - twig
 
 twig_loader:
     class: Twig_Loader_Filesystem
