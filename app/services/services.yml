@@ -42,3 +42,16 @@ twig_loader:
     arguments:
       - "/var/www/html/Cool_application/web/twig/templates"
     public: false
+
+pdo_client:
+    class: Coolframework\Component\Persistence\PdoClient
+    arguments:
+      - "@pdo"
+
+pdo:
+    class: PDO
+    arguments:
+      - "mysql:host=localhost;dbname=cool_example;charset=UTF8"
+      - "root"
+      - "root"
+    public: false
