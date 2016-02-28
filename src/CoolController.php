@@ -18,6 +18,12 @@ class CoolController extends CoolControllerBase
 
 	public function index()
 	{
+		$my_pdo_service = $this->container->getService('pdo_client');
+
+		$my_pdo_service->insert('User', ['email'=> 'velozmarkdrea@gmail.com', 'name' => 'Marcos']);
+		$result_set = $my_pdo_service->select('User', ['name' => 'Marcos']);
+		$this->template_engine->assign('user', $result_set[0]);
+
 		return Response::create($this->template_engine->render('hello.tpl'), Response::HTTP_ACCEPTED, ['Content-Type: text/html']);
 	}
 
