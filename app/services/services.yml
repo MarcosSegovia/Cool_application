@@ -19,6 +19,7 @@ smarty_templating:
     class: Coolframework\Component\Templating\SmartyTemplating
     arguments:
       - "@smarty"
+    public: true
 
 smarty:
     class: Smarty
@@ -47,6 +48,7 @@ pdo_client:
     class: Coolframework\Component\Persistence\PdoClient
     arguments:
       - "@pdo"
+    public: true
 
 pdo:
     class: PDO
