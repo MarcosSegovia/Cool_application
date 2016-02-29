@@ -57,3 +57,63 @@ CREATE TABLE IF NOT EXISTS User (
   UNIQUE INDEX (email)
 ) ENGINE=INNODB;
 ```
+
+##VH
+
+```shell
+# Managed by Puppet
+# ************************************
+
+<VirtualHost *:80>
+  ServerName coolframework.local
+
+  ## Vhost docroot
+  DocumentRoot "/var/www/html/Cool_application/public"
+
+
+  ## Directories, there should at least be a declaration for /var/www/sifo/instances/uvinum/public/root
+
+  <Directory "/var/www/html/Cool_application/public">
+    Options Indexes FollowSymLinks MultiViews
+    AllowOverride None
+    Order allow,deny
+    Allow from all
+  </Directory>
+
+  ## Custom fragment
+  RewriteEngine On
+  # Clean / at the end of the URLs.
+  RewriteRule ^(.+)/$ $1 [L,R=301]
+  # Redirect all requests that doesn't match an existent file or directory to PHP dispatcher.
+  RewriteCond %{DOCUMENT_ROOT}%{REQUEST_FILENAME} !-f
+  RewriteCond %{DOCUMENT_ROOT}%{REQUEST_FILENAME} !-d
+  RewriteRule ^/(.+) /index.php [QSA,L]
+
+</VirtualHost>
+
+<VirtualHost *:80>
+  ServerName devcoolframework.local
+
+  ## Vhost docroot
+  DocumentRoot "/var/www/html/Cool_application/public"
+
+  ## Directories, there should at least be a declaration for /var/www/sifo/instances/uvinum/public/root
+
+  <Directory "/var/www/html/Cool_application/public">
+    Options Indexes FollowSymLinks MultiViews
+    AllowOverride None
+    Order allow,deny
+    Allow from all
+  </Directory>
+
+  ## Custom fragment
+  RewriteEngine On
+  # Clean / at the end of the URLs.
+  RewriteRule ^(.+)/$ $1 [L,R=301]
+  # Redirect all requests that doesn't match an existent file or directory to PHP dispatcher.
+  RewriteCond %{DOCUMENT_ROOT}%{REQUEST_FILENAME} !-f
+  RewriteCond %{DOCUMENT_ROOT}%{REQUEST_FILENAME} !-d
+  RewriteRule ^/(.+) /index_dev.php [QSA,L]
+
+</VirtualHost>
+```
